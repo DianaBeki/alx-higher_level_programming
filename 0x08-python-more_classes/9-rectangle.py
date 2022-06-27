@@ -31,13 +31,13 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    def height(self, height):
-        self.__height = height
-        if not isinstance(height, int):
+    def height(self, value):
+        self.__height = value
+        if not isinstance(value, int):
             raise TypeError('height must be an integer')
-        if height < 0:
+        if value < 0:
             raise ValueError('height must be >=0')
-        self.__height = height
+        self.__height = value
 
     def area(self):
         return (self.__width * self.__height)
@@ -66,16 +66,15 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        if type(rect_1) is not Rectangle:
-            raise TypeError('rect_1 must be an instance of Rectangle')
-
-        elif type(rect_2) is not Rectangle:
-            raise TypeError('rect_2 must be an instance of Rectangle')
-
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_1.area() >= rect_2.area():
             return rect_1
+        else:
+            return rect_2
 
     @classmethod
     def square(cls, size=0):
-        """returns a new Rectangle instance with width == height == size"""
-        return New Rectangle(width == height == size)
+        return Rectangle(size, size)
