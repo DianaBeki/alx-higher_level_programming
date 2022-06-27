@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# 6-max_integer_test.py
+# Brennan D Baraban <375@holbertonschool.com>
 """Unittests for max_integer([..])."""
 
 import unittest
@@ -23,7 +25,7 @@ class TestMaxInteger(unittest.TestCase):
         max_at_beginning = [4, 3, 2, 1]
         self.assertEqual(max_integer(max_at_beginning), 4)
 
-    def test_empty_list(self):
+    def itest_empty_list(self):
         """Test an empty list."""
         empty = []
         self.assertEqual(max_integer(empty), None)
