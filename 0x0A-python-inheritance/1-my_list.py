@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-"""module of a class, MyList that inherits from list"""
+""" Creating Mylist class """
 
 
 class MyList(list):
-    """inherits from the class list"""
+    """
+    MyList class that inherits from list
+    """
     def print_sorted(self):
-        """prints a list sorted in assending order"""
+        """
+        Prints the list in sorted order
+        """
         print(sorted(self))
