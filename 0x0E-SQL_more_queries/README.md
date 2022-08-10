@@ -186,7 +186,7 @@ Write a script that lists all shows from [hbtn_0d_tvshows_rate]() by their ratin
 - You can use only one [SELECT]() statement
 - The database name will be passed as an argument of the [mysql]() command
 
-#### 19. Best genre
+#### 20. Best genre
 Import the database [hbtn_0d_tvshows_rate]() dump to your MySQL server: [download](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows_rate.sql)
 
 Write a script that lists all shows from hbtn_0d_tvshows_rate by their rating.
